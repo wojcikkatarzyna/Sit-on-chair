@@ -1,1 +1,67 @@
-﻿
+﻿* {
+  font-family: Arial, Times, sans-serif;
+}
+
+.container {
+  width: 965px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+header {
+  height: 35px;
+  color: white;
+  background-color: black;
+  font-size: 11px;
+}
+
+.logo {
+  float: left;
+  line-height: 35px;
+  padding-left: 50px;
+}
+
+nav {
+  float: right;
+}
+
+ul {
+  line-height: 35px;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 35px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+li:last-child {
+  padding-right: 60px;
+}
+/*
+#firma:hover {
+
+}
+
+#galeria:hover {
+
+}
+
+#kontakt:hover {
+
+}
+*/
+
+#on {
+  font-weight: 900;
+  color: rgb(0,153,153);
+}
+
+
+
+clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
