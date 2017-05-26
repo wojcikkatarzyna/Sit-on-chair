@@ -15,43 +15,65 @@ header {
   font-size: 11px;
 }
 
-.logo {
+header div {
   float: left;
   line-height: 35px;
   padding-left: 50px;
 }
 
-nav {
+header nav {
   float: right;
 }
 
-ul {
+.mainMenu {
   line-height: 35px;
 }
 
-li {
+header .mainMenu > li {
   list-style-type: none;
   padding-right: 35px;
-  display: inline-block;
+  display: inline;
   font-weight: 600;
+  position: relative;
 }
 
-li:last-child {
+header .mainMenu > li:last-child {
   padding-right: 60px;
 }
-/*
-#firma:hover {
 
+header .mainMenu > li:hover > ul {
+  display: block;
 }
 
-#galeria:hover {
-
+.submenu {
+  position: absolute;
+  top: 200%;
+  left: -15px;
+  padding-top: 10px;
+  line-height: 20px;
+  display: none;
 }
 
-#kontakt:hover {
-
+header .submenu::before {
+    display: inline-block;
+    border: 10px solid rgb(50,50,50);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    left: 40px;
+    top: -10px;
 }
-*/
+
+header .submenu li {
+  background: rgb(50,50,50);
+  padding: 5px 5px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid white;
+}
 
 #on {
   font-weight: 900;
