@@ -482,6 +482,7 @@ form {
   width: 565px;
   border: 1px solid pink;
   margin-top: 10px;
+  float: left;
 }
 
 form div {
@@ -501,6 +502,42 @@ form div input {
 
 #message {
   height: 165px;
+}
+
+.contactContent {
+  width: 380px;
+  height: 365px;
+  float: left;
+  border: 1px solid orange;
+  position: relative;
+}
+
+.contactContentImage {
+  width:230px;
+  position: absolute;
+  top: 0;
+  left: 75px;
+}
+
+.contactContentAgree {
+  position: absolute;
+  top: 200px;
+  border: 1px solid blue;
+  margin: 0 50px;
+}
+
+#formOK {
+  border: 1px solid #5db7a7;
+}
+.contactButtom {
+  text-align: center;
+  padding: 5px 25px;
+  background-color: #5db7a7;
+  border-radius: 7px;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 300px;
 }
 
 footer {
