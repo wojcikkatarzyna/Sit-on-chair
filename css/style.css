@@ -213,7 +213,6 @@ header {
 .container {
   width: 1050px;
   margin: 0 auto;
-	border: 1px solid red;
 }
 
 .headerContent div {
@@ -549,6 +548,35 @@ sup {
   border-radius: 7px;
   color: white;
   font-size: 18px;
+}
+
+.plan:hover {
+  border: 2px solid #5db7a7;
+	background-color: #5db7a7;
+}
+
+.plan:hover > .ring {
+  background-color: #5db7a7;
+	border: 1px solid #5db7a7;
+}
+
+.plan:hover > .circle {
+  background-color: white;
+}
+
+.plan:hover > .planName {
+  color: white;
+}
+
+.plan:hover > .planPrice {
+  border: 2px solid #5db7a7;
+	background: white;
+	color: #5db7a7;
+}
+
+.plan:hover > .planButtom {
+  background-color: white;
+  color: #5db7a7;
 }
 
 /*SECTION CONTACT*/
