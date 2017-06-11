@@ -106,12 +106,17 @@ document.addEventListener('DOMContentLoaded', function(){
       h4Left.innerText = this.innerText;
       if (this.innerText === "Clair") {
         h4Right.innerText = "200";
+        totalCost += 200;
       } else if (this.innerText === "Margarita") {
         h4Right.innerText = "300";
+        totalCost += 300;
       } else {
         h4Right.innerText = "400";
+        totalCost += 400;
       }
-      sum.innerText += parseInt(h4Right.innerText);
+      console.log(totalCost);
+      sum.innerText = totalCost;
+      //sum.innerText += parseInt(h4Right.innerText);
     });
 
   }
@@ -120,7 +125,9 @@ document.addEventListener('DOMContentLoaded', function(){
     liColor[i].addEventListener('click',function(){
       spanLeft[0].innerText = this.innerText;
       spanRight[0].innerText = "0";
-      sum.innerText += parseInt(spanRight[0].innerText);
+      totalCost += 0;
+      console.log(totalCost);
+      sum.innerText = totalCost;
     });
   }
 
@@ -129,10 +136,12 @@ document.addEventListener('DOMContentLoaded', function(){
       spanLeft[1].innerText = this.innerText;
       if (this.innerText === "Tkanina") {
         spanRight[1].innerText = "0";
+        totalCost += 0;
       } else {
         spanRight[1].innerText = "100";
+        totalCost += 100;
+        sum.innerText = totalCost;
       }
-      sum.innerText += parseInt(spanRight[1].innerText);
     });
   }
 
@@ -140,23 +149,14 @@ document.addEventListener('DOMContentLoaded', function(){
   check.addEventListener('click', function(event){
     spanLeft[2].innerText = "Transport";
     spanRight[2].innerText = "200";
-    sum.innerText += parseInt(spanRight[2].innerText);
+    totalCost += 200;
+    console.log(totalCost);
+    sum.innerText = totalCost;
   });
 
 
 
 
-
-  var rightPanel = document.querySelector(".panel_right");
-  var costs = rightPanel.children;
-  // for (var i = 0; i < costs.length; i++) {
-  //   totalCost += parseInt(costs[i]);
-  // }
-  // console.log(cost3);
-  // if (cost1 !== null) {
-  //   console.log(totalCost);
-
-  // }
 
 
 });
