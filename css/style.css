@@ -347,6 +347,7 @@ h2 {
   line-height: 20px;
 }
 
+/*SECTION PRICELIST*/
 #priceList {
 		height: 725px;
 }
@@ -356,7 +357,7 @@ h2 {
   position: relative;
   padding-top: 43px;
   margin-bottom: 40px;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .sectionName::after {
@@ -499,6 +500,245 @@ sup {
   color: #5db7a7;
 }
 
+/*CALCULATOR*/
+
+#calculator {
+	background-color: white;
+	height: 400px;
+}
+
+.inline {
+  display:inline-block;
+  width:340px;
+  padding:14px;
+  vertical-align: top;
+}
+
+.form {
+  margin-top:50px;
+}
+
+.drop_down_list {
+  border:1px solid #5db7a7;
+  width: 280px;
+  height:38px;
+  background-color: white;
+  margin-top:22px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.list_label {
+  font-size: 27px;
+  color: rgb(208, 208, 208);
+  font-family: 'ralewaylight', Arial, Tahoma, sans-serif;
+}
+
+.list_arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #5db7a7;
+  display:block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+#transport{
+	margin-top: 1px;
+	padding-top: 1px;
+}
+
+.check-box{
+	margin-top: 20px;
+	position: relative;
+}
+
+.agree{
+	background: url('../images/form_ok.jpg');
+	width: 48px;
+	height: 40px;
+	border: 1px solid #5db7a7;
+	position: absolute;
+}
+
+.active {
+  width: 48px;
+  height: 40px;
+}
+
+.check-box label{
+	padding-left: 15px;
+  font-size: 28px;
+  color: #cecece;
+  line-height: 120%;
+}
+
+
+/*
+.check-box {
+  position: relative;
+  padding: 30px 30px 30px 0;
+}
+
+.checkbox input {
+  display: block;
+  opacity: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  cursor: pointer;
+}
+
+.check-box label {
+  display: block;
+  padding-left: 65px;
+  position: relative;
+  font-size: 28px;
+  color: #cecece;
+  line-height: 120%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.check-box label::before, .checkbox label::after {
+  border: 1px solid #5db7a7;
+  content: "";
+  display: block;
+  left: 3px;
+  height: 39px;
+  position: absolute;
+  width: 42px;
+  top: -40px;
+}
+
+
+.check-box input:checked + label::after {
+  display: block;
+}*/
+
+.inline_text {
+  display: inline-block;
+  width: 228px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 15px;
+  color: #aeaeae;
+}
+
+.image_part img{
+  margin-top: 110px;
+  margin-left: 38px;
+}
+
+.summary_panel {
+  background-color: white;
+  width:100%;
+  height:195px;
+  padding:10px;
+  margin-top: 50px;
+
+}
+
+.green_button {
+  background-color: #5db7a7;
+  color: white;
+  text-align:center;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 10px 30px;
+  font-size: 24px;
+  display: inline-block;
+  font-family: 'ralewaymedium', Arial, Tahoma, sans-serif;
+  margin-top: 20px;
+  margin-left: 29px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.panel_left {
+  display: inline-block;
+  width: 185px;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_right {
+  display: inline-block;
+  width: 100px;
+  border-left:1px solid #e7e7e7;
+  text-align: right;
+  vertical-align: top;
+  padding-bottom:10px;
+  border-bottom:1px solid #e7e7e7;
+  height: 135px;
+}
+
+.panel_left h4 , .panel_right h4{
+  color: #5db7a7;
+  font-size: 23px;
+}
+
+.panel_left span{
+  margin-top:10px;
+  font-size: 22px;
+  color: #5b5a5a;
+  display: block;
+}
+
+.panel_right span {
+  display: block;
+  font-size: 22px;
+  color: #5db7a7;
+  margin-top:10px;
+}
+
+.sum_label{
+  display: inline-block;
+  width: 185px;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5b5a5a;
+}
+
+.sum {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 22px;
+  color: #5db7a7;
+}
+
+.list_panel {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 288px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  list-style: none;
+  margin: 0;
+  left: 0px;
+  z-index: 2;
+  position: absolute;
+  top: 54px;
+}
+
+.list_panel li {
+  margin-top:10px;
+  cursor: pointer;
+  color: #585858;
+}
+
+.title {
+  height: 30px;
+}
+
 /*SECTION CONTACT*/
 #contact {
   background-color: white;
@@ -529,7 +769,7 @@ form div input {
 }
 
 input::placeholder {
-color: grey;
+color: rgb(208, 208, 208);
 padding-left: 5px;
 font-weight: 100;
 }
