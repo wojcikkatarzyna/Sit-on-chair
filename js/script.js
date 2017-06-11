@@ -32,4 +32,37 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
+  //slider
+
+  var next = document.querySelector('.adArrowRight');
+  var prev = document.querySelector('.adArrowLeft');
+  var li = document.querySelectorAll('.slider > li');
+  console.log(next);
+  console.log(prev);
+  console.log(li);
+
+  var index = 0;
+  li[index].classList.remove('hidden');
+
+  next.addEventListener('click',function(){
+
+    li[index].classList.add('hidden');
+    index++;
+    if (index >li.length -1) {
+      index = 0;
+    }
+    li[index].classList.remove('hidden');
+  });
+
+  prev.addEventListener('click',function(){
+
+    li[index].classList.add('hidden');
+    index--;
+    if (index < 0) {
+      index = li.length -1;
+    }
+    li[index].classList.remove('hidden');
+  });
+
+
 });
