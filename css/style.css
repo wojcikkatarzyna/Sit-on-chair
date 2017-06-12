@@ -570,63 +570,15 @@ sup {
   height: 40px;
 }
 
+.summary_part .sectionName {
+  text-align: right;
+}
+
 .check-box label{
 	padding-left: 15px;
   font-size: 28px;
   color: #cecece;
   line-height: 120%;
-}
-
-
-/*
-.check-box {
-  position: relative;
-  padding: 30px 30px 30px 0;
-}
-
-.checkbox input {
-  display: block;
-  opacity: 0;
-  height: 48px;
-  position: absolute;
-  width: 48px;
-  cursor: pointer;
-}
-
-.check-box label {
-  display: block;
-  padding-left: 65px;
-  position: relative;
-  font-size: 28px;
-  color: #cecece;
-  line-height: 120%;
-  padding-top: 10px;
-  cursor: pointer;
-}
-
-.check-box label::before, .checkbox label::after {
-  border: 1px solid #5db7a7;
-  content: "";
-  display: block;
-  left: 3px;
-  height: 39px;
-  position: absolute;
-  width: 42px;
-  top: -40px;
-}
-
-
-.check-box input:checked + label::after {
-  display: block;
-}*/
-
-.inline_text {
-  display: inline-block;
-  width: 228px;
-  vertical-align: top;
-  margin-top: 30px;
-  margin-left: 15px;
-  color: #aeaeae;
 }
 
 .image_part img{
@@ -640,7 +592,6 @@ sup {
   height:195px;
   padding:10px;
   margin-top: 50px;
-
 }
 
 .green_button {
@@ -733,10 +684,6 @@ sup {
   margin-top:10px;
   cursor: pointer;
   color: #585858;
-}
-
-.title {
-  height: 30px;
 }
 
 /*SECTION CONTACT*/

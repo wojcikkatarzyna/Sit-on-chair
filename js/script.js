@@ -71,21 +71,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  //calculator- transport
-
-  var check = document.querySelector('.active');
-  var div = check.previousElementSibling
-
-  check.addEventListener('click', function(event){
-    event.preventDefault();
-    div.classList.add('agree');
-  });
-
-    div.addEventListener('click', function(event){
-      event.preventDefault();
-      this.classList.remove('agree');
-  });
-
   //calculator-summary
   var liChair = document.querySelectorAll(".chairs li");
   var h4Left = document.querySelector(".panel_left h4");
@@ -100,63 +85,82 @@ document.addEventListener('DOMContentLoaded', function(){
   var cost4 = 0;
   var sum = document.querySelector(".sum");
   var totalCost = 0;
+  var check = document.querySelector('.active');
+  var div = check.previousElementSibling;
 
   for (var i = 0; i < liChair.length; i++) {
     liChair[i].addEventListener('click',function(){
+      event.preventDefault(event);
+      cost1 = 0;
       h4Left.innerText = this.innerText;
       if (this.innerText === "Clair") {
         h4Right.innerText = "200";
-        totalCost += 200;
+        cost1 = 200;
       } else if (this.innerText === "Margarita") {
         h4Right.innerText = "300";
-        totalCost += 300;
+        cost1 = 300;
       } else {
         h4Right.innerText = "400";
-        totalCost += 400;
+        cost1 = 400;
       }
-      console.log(totalCost);
+      totalCost = cost1 + cost2 + cost3 +cost4;
       sum.innerText = totalCost;
-      //sum.innerText += parseInt(h4Right.innerText);
     });
 
   }
 
   for (var i = 0; i < liColor.length; i++) {
-    liColor[i].addEventListener('click',function(){
+    liColor[i].addEventListener('click',function(event){
+      event.preventDefault(event);
+      cost2 = 0;
       spanLeft[0].innerText = this.innerText;
       spanRight[0].innerText = "0";
-      totalCost += 0;
-      console.log(totalCost);
+      cost2 = 0;
+      totalCost = cost1 + cost2 + cost3 +cost4;
       sum.innerText = totalCost;
     });
   }
 
   for (var i = 0; i < liPattern.length; i++) {
-    liPattern[i].addEventListener('click',function(){
+    liPattern[i].addEventListener('click',function(event){
+      event.preventDefault(event);
+      cost3 = 0;
       spanLeft[1].innerText = this.innerText;
       if (this.innerText === "Tkanina") {
         spanRight[1].innerText = "0";
-        totalCost += 0;
+        cost3 = 0;
       } else {
         spanRight[1].innerText = "100";
-        totalCost += 100;
-        sum.innerText = totalCost;
+        cost3 = 100;
       }
+      totalCost = cost1 + cost2 + cost3 +cost4;
+      sum.innerText = totalCost;
     });
   }
 
-  console.log(spanRight);
   check.addEventListener('click', function(event){
+    event.preventDefault(event);
+    div.classList.add('agree');
+    cost4 = 0;
     spanLeft[2].innerText = "Transport";
     spanRight[2].innerText = "200";
-    totalCost += 200;
+    cost4 = 200;
+    totalCost = cost1 + cost2 + cost3 +cost4;
     console.log(totalCost);
     sum.innerText = totalCost;
   });
 
-
-
-
+  div.addEventListener('click', function(event){
+    event.preventDefault(event);
+    this.classList.remove('agree');
+    cost4 = 0;
+    spanLeft[2].innerText = "Transport";
+    spanRight[2].innerText = "0";
+    cost4 = 0;
+    totalCost = cost1 + cost2 + cost3 +cost4;
+    console.log(totalCost);
+    sum.innerText = totalCost;
+  });
 
 
 });
